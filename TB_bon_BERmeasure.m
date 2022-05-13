@@ -1,4 +1,4 @@
-
+tic
 %%% Testbench
 
 clear all;
@@ -7,7 +7,7 @@ load ir_Microstrip4inch_fext_10Gbps;
 load ir_Microstrip4inch_10Gbps;
 
 %%% variable
-N= 2000; % total # of data symbol
+N=10^10; % total # of data symbol
 Samplepersymbol = 64; % #of samples in one symbol(1UI)
 SNR_db= 1000 ; % power ratio between signal and noise
 
@@ -23,7 +23,7 @@ end
     % for differnetial signaling change voltage range to [-1 1] from [0 1]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+print(HI)
 
 %%%%%%%%channel response%%%%%%%%%%%%%%%%%%%%%%
 Rx_insertion_loss=conv(ir(:,1),Tx_data_analog(1,:)); % signal through lossy tr line
@@ -64,31 +64,32 @@ error_number_wfext=sum(error_position_wfext,'all');
 BER_wfext=error_number_wfext/N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%% eye diagram %%%%%%%%%%%%%%%%%%%%%%%%%
- 
-%%% just cut 2UI per a window
-j=1;
-offset=0;
- for  i=100:floor(length(Rx_insertion_loss)/Samplepersymbol)/2-300
-    eye_wofext(:,j) = Rx_insertion_loss(floor((Samplepersymbol*(2*i-2)))+1+offset: floor((Samplepersymbol*(2*i)))+offset);
-    j=j+1;
- end 
-phase=[0:100/64:2*100-100/64];
-figure;
-plot(phase,eye_wofext);
-title('w/o FEXT')
-axis([0 200-100/64 -1.2 1.2])
+% %%%%%%%%%% eye diagram %%%%%%%%%%%%%%%%%%%%%%%%%
+%  
+% %%% just cut 2UI per a window
+% j=1;
+% offset=0;
+%  for  i=100:floor(length(Rx_insertion_loss)/Samplepersymbol)/2-300
+%     eye_wofext(:,j) = Rx_insertion_loss(floor((Samplepersymbol*(2*i-2)))+1+offset: floor((Samplepersymbol*(2*i)))+offset);
+%     j=j+1;
+%  end 
+% phase=[0:100/64:2*100-100/64];
+% figure;
+% plot(phase,eye_wofext);
+% title('w/o FEXT')
+% axis([0 200-100/64 -1.2 1.2])
+% 
+% j=1;
+% offset=0;
+% for  i=100:floor(length(Rx_signal)/Samplepersymbol)/2-300
+%     eye_wfext(:,j) = Rx_signal(floor((Samplepersymbol*(2*i-2)))+1+offset: floor((Samplepersymbol*(2*i)))+offset);
+%     j=j+1;
+%  end 
+% phase=[0:100/64:2*100-100/64];
+% figure;
+% plot(phase,eye_wfext);
+% title('w/ FEXT')
+% axis([0 200-100/64 -1.5 1.5])
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-j=1;
-offset=0;
-for  i=100:floor(length(Rx_signal)/Samplepersymbol)/2-300
-    eye_wfext(:,j) = Rx_signal(floor((Samplepersymbol*(2*i-2)))+1+offset: floor((Samplepersymbol*(2*i)))+offset);
-    j=j+1;
- end 
-phase=[0:100/64:2*100-100/64];
-figure;
-plot(phase,eye_wfext);
-title('w/ FEXT')
-axis([0 200-100/64 -1.5 1.5])
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+toc

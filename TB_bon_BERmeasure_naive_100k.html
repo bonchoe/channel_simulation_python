@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2021a"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S0 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S1 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S2 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S3 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S4 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S5 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; overflow-x: hidden; line-height: 44.316px;  }
+.S6 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 6px 45px 4px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S7 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+.S8 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 44.316px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px;  }
+/* Styling that is common to warnings and errors is in diagnosticOutput.css */.embeddedOutputsErrorElement {    min-height: 18px;    max-height: 250px;    overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.embeddedOutputsErrorElement.rightPaneElement {}
+/* Styling that is common to warnings and errors is in diagnosticOutput.css */.embeddedOutputsWarningElement{    min-height: 18px;    max-height: 250px;    overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsWarningElement.rightPaneElement {}
+/* Copyright 2015-2019 The MathWorks, Inc. *//* In this file, styles are not scoped to rtcContainer since they could be in the Dojo Tooltip */.diagnosticMessage-wrapper {    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;    font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {    color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {    color: rgb(255,100,0);    text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {    color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {    color: rgb(230,0,0);    text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart,.diagnosticMessage-wrapper .diagnosticMessage-causePart {    white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {    white-space: pre;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {    white-space: pre;    word-wrap:  initial;    min-height: 18px;    max-height: 250px;    overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {    padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {    min-height: 16px;}
+.rightPaneElement .textElement {    padding-top: 2px;    padding-left: 9px;}</style></head><body><div class = rtcContent><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'><span style="white-space: pre"><span >tic</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >clear </span><span style="color: rgb(170, 4, 249);">all</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >load </span><span style="color: rgb(170, 4, 249);">ir_Microstrip4inch_fext_10Gbps</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >load </span><span style="color: rgb(170, 4, 249);">ir_Microstrip4inch_10Gbps</span><span >;</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%% variable</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >N=10^5; </span><span style="color: rgb(2, 128, 9);">% total # of data symbol</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >sps = 64; </span><span style="color: rgb(2, 128, 9);">% #of samples in one symbol(1UI)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >SNR_db= 1000 ; </span><span style="color: rgb(2, 128, 9);">% power ratio between signal and noise</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >nrz=[-1,1];</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%% channel data generation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >ts=tic;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">for </span><span >i=1:N</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    sub_mat=randi([0,1],2,1); </span><span style="color: rgb(2, 128, 9);">% random seed generation</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    Tx_data_digital(:,i)=sub_mat; </span><span style="color: rgb(2, 128, 9);">% digital bit ( first row= channel 1 Tx, second row = channel 2 Tx) </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    Tx_data_analog(:,sps*i-sps+1 : i*sps)=repmat(sub_mat,1,sps);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(2, 128, 9);">% time domain pulse of Tx digital bit   ( first row= channel 1 Tx, second row = channel 2 Tx)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    Tx_data_analog=(Tx_data_analog-0.5)*2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    Tx_data_digital=(Tx_data_digital-0.5)*2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(2, 128, 9);">% for differnetial signaling change voltage range to [-1 1] from [0 1]</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >te=toc(ts)</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>te = 0.4257</div></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >ts=tic;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%channel response%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_insertion_loss=conv(ir(:,1),Tx_data_analog(1,:)); </span><span style="color: rgb(2, 128, 9);">% signal through lossy tr line</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_insertion_loss=awgn(Rx_insertion_loss,SNR_db,</span><span style="color: rgb(170, 4, 249);">'measured'</span><span >); </span><span style="color: rgb(2, 128, 9);">% AWGN noise is added by (SNR_db) decibels.</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_fext=conv(ir_fext(:,1),Tx_data_analog(2,:)); </span><span style="color: rgb(2, 128, 9);">% coupling between two channel ( channel2 affect to channel1)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_signal=Rx_fext+Rx_insertion_loss; </span><span style="color: rgb(2, 128, 9);">% channel 1 response with AWGN, FEXT noise (%%In practice SNR might be worse because of fext))</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >te=toc(ts)</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>te = 13.7679</div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >ts=tic;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_sample_data_wofext = Rx_insertion_loss( 461:64:461+64*(N-1)); </span><span style="color: rgb(2, 128, 9);">%%%% sample N datas with considering delay ( with out FEXT)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_data_digital_wofext =sign(Rx_sample_data_wofext); </span><span style="color: rgb(2, 128, 9);">%%%% comparator  e.g) -0.006  -&gt;  -1 , 0.8  -&gt;  1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_sample_data_wfext = Rx_signal( 461:64:461+64*(N-1));  </span><span style="color: rgb(2, 128, 9);">%%%% sample N datas with considering delay ( with FEXT)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Rx_data_digital_wfext =sign(Rx_sample_data_wfext); </span><span style="color: rgb(2, 128, 9);">%%%% comparator</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >te=toc(ts)</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>te = 0.0097</div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >ts=tic;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%%%%%%BER measure%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >Tx_channel1_sub=Tx_data_digital(1,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%% 1. without FEXT</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >error_position_wofext=abs(Tx_channel1_sub-Rx_data_digital_wofext)./2; </span><span style="color: rgb(2, 128, 9);">%%if error occured, value is 1. if not, value is 0</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >error_number_wofext=sum(error_position_wofext,</span><span style="color: rgb(170, 4, 249);">'all'</span><span >); </span><span style="color: rgb(2, 128, 9);">%% add all errors</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >BER_wofext=error_number_wofext/N </span><span style="color: rgb(2, 128, 9);">% ber measure</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>BER_wofext = 0</div></div></div><div class="inlineWrapper"><div  class = 'S7'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%% 2. with FEXT</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >error_position_wfext=abs(Tx_channel1_sub-Rx_data_digital_wfext)./2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >error_number_wfext=sum(error_position_wfext,</span><span style="color: rgb(170, 4, 249);">'all'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >BER_wfext=error_number_wfext/N</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>BER_wfext = 0.0090</div></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre"><span style="color: rgb(2, 128, 9);">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre"><span >te=toc(ts)</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 36px; '>te = 0.0547</div></div></div></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S8'><span style="white-space: pre"><span >toc</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="7E8E6580" data-scroll-top="null" data-scroll-left="null" data-width="3962" data-height="44" data-hashorizontaloverflow="false" data-testid="output_6" style="max-height: 261px; width: 3990px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 36px;"><div class="textElement" style="white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 36px;">Elapsed time is 14.583343 seconds.</div></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+tic
+%%
+clear all;
+
+load ir_Microstrip4inch_fext_10Gbps;
+load ir_Microstrip4inch_10Gbps;
+%%
+%%% variable
+N=10^5; % total # of data symbol
+sps = 64; % #of samples in one symbol(1UI)
+SNR_db= 1000 ; % power ratio between signal and noise
+nrz=[-1,1];
+%%
+%%% channel data generation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ts=tic;
+for i=1:N
+    sub_mat=randi([0,1],2,1); % random seed generation
+    Tx_data_digital(:,i)=sub_mat; % digital bit ( first row= channel 1 Tx, second row = channel 2 Tx) 
+    Tx_data_analog(:,sps*i-sps+1 : i*sps)=repmat(sub_mat,1,sps);
+    % time domain pulse of Tx digital bit   ( first row= channel 1 Tx, second row = channel 2 Tx)
+end
+    Tx_data_analog=(Tx_data_analog-0.5)*2;
+    Tx_data_digital=(Tx_data_digital-0.5)*2;
+    % for differnetial signaling change voltage range to [-1 1] from [0 1]
+te=toc(ts)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+ts=tic;
+%%%%%%%%channel response%%%%%%%%%%%%%%%%%%%%%%
+Rx_insertion_loss=conv(ir(:,1),Tx_data_analog(1,:)); % signal through lossy tr line
+Rx_insertion_loss=awgn(Rx_insertion_loss,SNR_db,'measured'); % AWGN noise is added by (SNR_db) decibels.
+
+Rx_fext=conv(ir_fext(:,1),Tx_data_analog(2,:)); % coupling between two channel ( channel2 affect to channel1)
+
+Rx_signal=Rx_fext+Rx_insertion_loss; % channel 1 response with AWGN, FEXT noise (%%In practice SNR might be worse because of fext))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+te=toc(ts)
+%%
+ts=tic;
+Rx_sample_data_wofext = Rx_insertion_loss( 461:64:461+64*(N-1)); %%%% sample N datas with considering delay ( with out FEXT)
+Rx_data_digital_wofext =sign(Rx_sample_data_wofext); %%%% comparator  e.g) -0.006  ->  -1 , 0.8  ->  1
+
+
+Rx_sample_data_wfext = Rx_signal( 461:64:461+64*(N-1));  %%%% sample N datas with considering delay ( with FEXT)
+Rx_data_digital_wfext =sign(Rx_sample_data_wfext); %%%% comparator
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+te=toc(ts)
+%%
+ts=tic;
+%%%%%%%%%%%%%BER measure%%%%%%%%%%%%%%%%%%%%%%
+Tx_channel1_sub=Tx_data_digital(1,:);
+
+%%% 1. without FEXT
+error_position_wofext=abs(Tx_channel1_sub-Rx_data_digital_wofext)./2; %%if error occured, value is 1. if not, value is 0
+error_number_wofext=sum(error_position_wofext,'all'); %% add all errors
+
+BER_wofext=error_number_wofext/N % ber measure
+
+%%% 2. with FEXT
+error_position_wfext=abs(Tx_channel1_sub-Rx_data_digital_wfext)./2;
+error_number_wfext=sum(error_position_wfext,'all');
+
+BER_wfext=error_number_wfext/N
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+te=toc(ts)
+%%
+toc
+##### SOURCE END #####
+-->
+</div></body></html>
